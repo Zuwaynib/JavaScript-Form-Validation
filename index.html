@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Form Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="myForm" action="/submit" method="post">
+            <h1>Registration Form</h1>
+
+            <label for="username">Username
+                <input type="text" id="username" name="username" required />
+            </label>
+            <span class="error" id="username-error" style="display: none;"></span>
+                
+            <label for="email">Email
+                <input type="email" id="email" name="email" required />
+            </label>
+            <span class="error" id="email-error" style="display: none;"></span>
+
+            <label for="password">Password
+                <input type="password" id="password" name="password" required />
+            </label>
+            <span class="error" id="password-error" style="display: none;"></span>
+
+            <label for="confirmPassword">Confirm Password
+                <input type="password" id="confirmPassword" name="confirmPassword" required />
+            </label>
+            <span class="error" id="confirmPassword-error" style="display: none;"></span>
+
+            <label for="dob">Date of Birth
+                <input type="date" id="dob" name="dob" />
+            </label>
+            <span class="error" id="dob-error" style="display: none;"></span>
+
+            <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="">--Select a country--</option>
+                    <option value="nig">Nigeria</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                </select>
+                <span class="error" id="country-error" style="display: none;"></span>
+           
+            <label for="terms">
+                <input type="checkbox" name="terms" id="terms" />
+                I accept the <a href="#">Terms and Conditions</a>
+            </label>
+            <span class="error" id="terms-error" style="display: none;"></span>
+
+            <button type="submit">Submit</button>
+           </form>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
